@@ -20,7 +20,7 @@ input BookInput {
 """
 TYPE
 """
-type defBook {
+type Book {
     pk: Int!,
     sk: String!,
     author: String!,
@@ -31,7 +31,7 @@ type defBook {
     quantityRequested: Int!,
     quantitySold: Int!,
     sellingPrice: Int!,
-    costPrice: Int!,
+    costPrice: Int!
 }
 
 """
