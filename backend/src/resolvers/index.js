@@ -1,4 +1,5 @@
-import {hello} from "./query";
+import { hello } from "./query";
+import { devAddBook } from "./mutation";
 
 export const resolvers = {
     Query: {
