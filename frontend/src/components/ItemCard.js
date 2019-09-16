@@ -15,7 +15,6 @@ const CardStyles = styled(Card) `
 `;
 
 const ItemCard = ({
-    isbn,
     title,
     author,
     publisher,
@@ -36,13 +35,6 @@ const ItemCard = ({
           <Row>
             <Col>
                 <Heading>{ title }</Heading>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-                <Card.Text>
-                    ISBN - { isbn }
-                </Card.Text>
             </Col>
           </Row>
           <Row>
