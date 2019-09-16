@@ -14,3 +14,104 @@ const CardStyles = styled(Card) `
   }
 `;
 
+const ItemCard = ({
+    isbn,
+    title,
+    author,
+    publisher,
+    dateAdded,
+    quantityOnHand,
+    quantityOnOrder,
+    quantityRequested,
+    quantitySold,
+    sellingPrice,
+    costPrice,
+
+  ...props
+}) => {
+  return(
+    <CardStyles { ...props }>
+      <Card.Body>
+        <Container>
+          <Row>
+            <Col>
+                <Heading>{ title }</Heading>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+                <Card.Text>
+                    ISBN - { isbn }
+                </Card.Text>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+                <Card.Text>
+                    Author/s - { author }
+                </Card.Text>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+                <Card.Text>
+                    Publisher - { publisher }
+                </Card.Text>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+                <Card.Text>
+                    Date Added - { dateAdded }
+                </Card.Text>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+                <Card.Text>
+                    On-Hand - { quantityOnHand }
+                </Card.Text>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+                <Card.Text>
+                    On-Order - { quantityOnOrder }
+                </Card.Text>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+                <Card.Text>
+                    Requested - { quantityRequested }
+                </Card.Text>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+                <Card.Text>
+                    Sold - { quantitySold }
+                </Card.Text>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Card.Text>
+                Selling Price - R { sellingPrice }
+              </Card.Text>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Card.Text>
+                Cost Price - R { costPrice }
+              </Card.Text>
+            </Col>
+          </Row>
+        </Container>
+      </Card.Body>
+    </CardStyles>
+  )
+}
+
+export default ItemCard;
