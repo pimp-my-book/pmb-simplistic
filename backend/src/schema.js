@@ -4,8 +4,8 @@ const schema = `
 INPUT
 """
 input defBookInput {
-    Author: String!,
-    Publisher: String!,
+    author: String!,
+    publisher: String!,
     dateAdded: String!,
     quantityOnHand: Int!,
     quantityOnOrder: Int!,
