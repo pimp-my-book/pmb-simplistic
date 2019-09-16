@@ -3,7 +3,7 @@ const schema = `
 """
 INPUT
 """
-input defBookInput {
+input BookInput {
     author: String!,
     publisher: String!,
     dateAdded: String!,
@@ -18,7 +18,7 @@ input defBookInput {
 """
 TYPE
 """
-type defBook {
+type Book {
     pk: Int!,
     sk: String!,
     author: String!,
@@ -38,14 +38,14 @@ QUERY
 type Query {
     hello: String!,
 
-    allBooksOutput: [defBook]
+    allBooksOutput: [Book]
 }
 
 """
 MUTATION
 """
 type Mutation {
-    devAddBook(input: defBookInput): defBook
+    devAddBook(input: BookInput): Book
 
     addBook(
         author: String!,
@@ -57,7 +57,7 @@ type Mutation {
         quantitySold: Int!,
         sellingPrice: Int!,
         costPrice: Int!,
-    ): defBook
+    ): Book
 }
 
 `
