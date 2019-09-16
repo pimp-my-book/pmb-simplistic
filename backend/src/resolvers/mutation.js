@@ -1,6 +1,6 @@
 import * as dynamodbLib from "../../resources/libs/dynamodb-lib";
 
-export const devAddBook = async ({ input:args }, context) => {
+export const addBook = async (args, context) => {
     const params = {
         TableName: process.env.SimplisticTable,
         Item: {
