@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Navbar from "react-bootstrap/Navbar";
+import Routes from "./Routes";
 import "./styles/styles.css";
 
 class App extends Component {
