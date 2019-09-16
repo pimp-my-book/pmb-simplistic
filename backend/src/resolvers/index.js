@@ -1,4 +1,4 @@
-import { hello } from "./query";
+import { hello, allBooksOutput } from "./query";
 import { addBook } from "./mutation";
 
 export const resolvers = {
