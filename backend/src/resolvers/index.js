@@ -6,6 +6,6 @@ export const resolvers = {
         hello: (root, args, context) => hello(args, context)
     },
     Mutation: {
-        devAddBook: (root, {input:args}, context) => devAddBook({input:args}, context)
+        addBook: (root, args, context) => addBook(args, context)
     }
 }
