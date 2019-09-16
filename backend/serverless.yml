@@ -65,3 +65,7 @@ functions:
           method: get 
           cors: true
           integration: lambda-proxy
+
+resources:
+  #DynamoDB
+  - ${file(resources/configs/simplistic-table.yml)}
