@@ -9,8 +9,10 @@ import './styles/styles.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+const stage = process.env.REACT_APP_STAGE === "prod";
+
 const httpLink = createHttpLink({
-  uri: 'http://localhost:4000/graphql'
+  uri: stage ? process.env.REACT_APP_GRAPHQL_ENDPNT_PROD : process.env.REACT_APP_GRAPHQL_ENDPNT_DEV
 })
 
 const client = new ApolloClient({
