@@ -51,6 +51,9 @@ type Query {
 """
 MUTATION
 """
+type Mutation {
+    devAddBook(input: defBookInput): defBook
+}
 
 `
 
