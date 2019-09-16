@@ -13,7 +13,7 @@ export default class Home extends Component {
                     <Col xs={6} md={4}>
                     </Col>
                     <Col className="personal-space" xs={6} md={4}>
-                    <Button variant="primary" href="#">
+                    <Button variant="primary" href="/AddBook">
                         Add Book
                     </Button>
                     </Col>
