@@ -16,13 +16,6 @@ input defBookInput {
 }
 
 """
-A hello world Query
-"""
-type Query {
-     hello: String!
-}
-
-"""
 TYPE
 """
 type defBook {
