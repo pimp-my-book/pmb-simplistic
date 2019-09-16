@@ -4,14 +4,14 @@ import "./styles/styles.css";
 
 class App extends Component {
   render() {
-  return (
+    return (
       <div>
         <Navbar className="App-Navbar" bg="primary" variant="dark">
           <Navbar.Brand href="/"><span role="img" aria-label="Books">📚</span></Navbar.Brand>
         </Navbar>
-    </div>
-  );
-}
+      </div>
+    );
+  }
 }
 
 export default App;
