@@ -1,3 +1,5 @@
+import gql from 'graphql-tag';
+
 // GraphQL - Add Book Mutation
 export const ADD_BOOK = gql `
 mutation AddBookMutation (
