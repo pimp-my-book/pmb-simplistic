@@ -30,8 +30,6 @@ type Query {
 MUTATION
 """
 type Mutation {
-    devAddBook(input: BookInput): Book
-
     addBook(
         pk: String!,
         sk: String!,
