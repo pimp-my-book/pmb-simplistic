@@ -39,6 +39,29 @@
     }
 }
 
+.Home .landingPage {
+    padding: 5px 0;
+    text-align: center;
+}
+  
+.Home .landingPage h1 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+}
+  
+.Home .landingPage p {
+    color: #999;
+}
+
+.Home {
+    justify-content: center;
+    align-items: center;
+}
+
+.personal-space {
+    padding: 10px
+}
+
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
