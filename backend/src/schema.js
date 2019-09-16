@@ -42,7 +42,11 @@ type defBook {
 """
 QUERY
 """
+type Query {
+    hello: String!,
 
+    allBooksOutput: [defBook]
+}
 
 """
 MUTATION
