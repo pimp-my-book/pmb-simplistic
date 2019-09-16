@@ -10,6 +10,7 @@ class App extends Component {
         <Navbar className="App-Navbar" bg="primary" variant="dark">
           <Navbar.Brand href="/"><span role="img" aria-label="Books">📚</span></Navbar.Brand>
         </Navbar>
+        <Routes />
       </div>
     );
   }
