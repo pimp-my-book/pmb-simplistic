@@ -3,7 +3,9 @@ const schema = `
 """
 INPUT
 """
-input defBookInput {
+input BookInput {
+    pk: String!,
+    sk: String!,
     author: String!,
     publisher: String!,
     dateAdded: String!,
@@ -12,7 +14,7 @@ input defBookInput {
     quantityRequested: Int!,
     quantitySold: Int!,
     sellingPrice: Int!,
-    costPrice: Int!,
+    costPrice: Int!
 }
 
 """
