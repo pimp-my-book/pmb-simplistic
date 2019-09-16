@@ -47,7 +47,7 @@ type Query {
 MUTATION
 """
 type Mutation {
-    devAddBook(input: defBookInput): defBook
+    devAddBook(input: BookInput): Book
 
     addBook(
         author: String!,
@@ -58,8 +58,8 @@ type Mutation {
         quantityRequested: Int!,
         quantitySold: Int!,
         sellingPrice: Int!,
-        costPrice: Int!,
-    ): defBook
+        costPrice: Int!
+    ): Book
 }
 
 `
