@@ -21,7 +21,7 @@ input BookInput {
 TYPE
 """
 type Book {
-    pk: Int!,
+    pk: String!,
     sk: String!,
     author: String!,
     publisher: String!,
@@ -50,6 +50,8 @@ type Mutation {
     devAddBook(input: BookInput): Book
 
     addBook(
+        pk: String!,
+        sk: String!,
         author: String!,
         publisher: String!,
         dateAdded: String!,
