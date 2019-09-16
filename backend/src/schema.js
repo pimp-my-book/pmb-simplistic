@@ -39,6 +39,15 @@ type defBook {
     costPrice: Int!
 }
 
+"""
+QUERY
+"""
+
+
+"""
+MUTATION
+"""
+
 `
 
 export {schema}
