@@ -1,4 +1,4 @@
-/*
+import * as dynamodbLib from "../../resources/libs/dynamodb-lib";
 
 ADD YOUR MUTATION HERE:
 
