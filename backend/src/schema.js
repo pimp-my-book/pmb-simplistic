@@ -40,7 +40,7 @@ QUERY
 type Query {
     hello: String!,
 
-    allBooksOutput: [defBook]
+    allBooksOutput: [Book]
 }
 
 """
