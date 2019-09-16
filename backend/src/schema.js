@@ -22,6 +22,23 @@ type Query {
      hello: String!
 }
 
+"""
+TYPE
+"""
+type defBook {
+    pk: Int!
+    sk: String!
+    Author: String!
+    Publisher: String!
+    dateAdded: String!
+    quantityOnHand: Int!
+    quantityOnOrder: Int!
+    quantityRequested: Int!
+    quantitySold: Int!
+    sellingPrice: Int!
+    costPrice: Int!
+}
+
 `
 
 export {schema}
